@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_effects.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>2.3. "Hola Python" | Mis comienzos con Python </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Belén Lara Aznar" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_effects.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<link rel="stylesheet" type="text/css" href="udl-content.css" />
+<script type="text/javascript" src="udl-content.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-12"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Mis comienzos con Python</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Mis comienzos con Python</a></li>
+   <li><a href="1_paseando_por_la_programacin.html" class="no-ch">1. Paseando por la programación</a></li>
+   <li class="current-page-parent"><a href="2_empezando_a_programar.html" class="current-page-parent daddy">2. Empezando a programar</a>
+   <ul>
+      <li><a href="22_acrcate_a_python.html" class="no-ch">2.2. Acércate a Python</a></li>
+      <li id="active"><a href="23_hola_python.html" class="active no-ch">2.3. "Hola Python"</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="22_acrcate_a_python.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><span class="page-counter">Página <strong>5</strong> de <strong>5</strong></span>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">2.3. "Hola Python"</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id144">
+<div class="iDevice emphasis0" >
+<div id="ta144_144_2" class="block iDevice_content">
+<div class="exe-text"><p><img src="retor_adultos_sin_bocadillo.gif" alt="Rétor explica:" title="Rétor explica:" style="float: left;" width="125" height="125" />En esta sección vamos a tratar algunos ejemplos para practicar con Python.</p>
+<p>De este modo descubriremos algunas funciones, palabras reservadas y formas de iniciar los programas, antes de realizar la aplicación final.</p>
+<p>¡A practicar!</p></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_exp_actividad" id="id145">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">1. Programamos nuestro cálculo de medias.</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta145_145_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-expression"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>En el programa trabajado en la sección anterior realizaste un pseudocódigo de su proceso.</p>
+<p>Recupéralo y vamos a completar su programación usando lo que ya conocemos de Python. Además, le haremos una serie de mejoras. Atrévete con cada paso.</p></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_exp_competenciadigital" id="id146">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">1.1. Escribe el código en Python</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta146_146_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-expression"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Con lo aprendido en las últimas secciones, realiza el código Python del programa indicado. No te olvides pedir por teclado los 3 valores que necesitas y almacenarlos en sus respectivas variables. Después, pruébalo y comprueba que funciona.</p></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header exe-udlContent-character-4"><h2>¿Necesitas ayuda para pedir al usuario las variables?</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Recuerda que para tomar una variable del teclado necesitamos la función <strong>input()</strong></p>
+<p>Si además queremos, muy recomendado, que muestre por pantalla un mensaje al usuario que le indique lo que tiene que hacer (y no se quede la pantalla esperando en blanco eternamente), debes poner entre los paréntesis un mensaje delimitado por comillas:</p>
+<p><strong>input("Esta frase se muestra por pantalla. Explica en ella qué hay que hacer ahora")</strong></p>
+<p>Para asignar lo que se introduce por teclado a la variable <strong>x</strong> (por ejemplo), se usa <strong>x=input("Introduce el valor esperado")</strong></p></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_exp_competenciadigital" id="id147">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">1.2. Personalizando nuestro cálculo: trabajamos con nuevas variables</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta147_147_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-expression"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p style="text-align: justify;"><img src="media_ejercicio1.png" alt="Diagrama de flujo con la media" title="Diagrama de flujo con la media" style="float: left; margin-right: 30px; margin-left: 30px;" width="200" height="169">Queremos darle a nuestro programa una mayor flexibilidad: que cada usuario pueda configurar el peso (porcentaje) de la calificación de cada trimestre en la nota final. Para ello, vamos a reflexionar:</p>
+<ul>
+<li style="text-align: justify;">¿Cómo se te ocurre que podría el usuario configurar los pesos de las calificaciones de cada trimestre?</li>
+<li>¿Qué elementos tendrías que añadir para lograr esa configuración?</li>
+<li>Modifica el diagrama de flujo que aparece a la izquierda para añadir esta funcionalidad.</li>
+</ul></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header exe-udlContent-character-4"><h2>¿Quieres algunas ideas?</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p style="text-align: justify;">Necesitarás para ello nuevas variables. También tendrás que inicializarlas: pídele sus valores al usuario, pero recuerda especificar que sólo introduzcan el número, ya que si introducen el símbolo, por ejemplo 15%, el valor se convertirá en una cadena de caracteres al mezclar números y símbolos.</p></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_exp_competenciadigital" id="id148">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">1.3. Crea el código de la nueva funcionalidad</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta148_148_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-expression"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Realiza el código Python de la funcionalidad añadida y depura los errores que resulten en el IDLE para que funcione correctamente.</p></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_rep_lee" id="id149">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">2. Usando las librerías en Python</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta149_149_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-representation"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><figure class="exe-figure exe-image float-left license-CC-BY-SA" style="width: 109px; text-align: center;"><img src="libraru_python.jpg" alt="librería Python" title="librería Python" width="109" height="145">
+<figcaption class="figcaption"><span style="font-size: 8pt;"><a href="https://www.flickr.com/photos/44165698@N00" target="_blank" class="author" rel="noopener"> </a><span class="license"><span class="sep"></span></span></span></figcaption>
+</figure>
+<p style="text-align: justify;">Cuando se programa, a veces hace falta recurrir a funciones que ya están implementadas. Esto nos facilita poder crear un programa sin tener que repetir el código o implementarlo todo nuevamente.</p>
+<p style="text-align: justify;">Para esto se utilizan las <a href="#tb3ddb3c3-2edb-509e-90fa-65f3536d1c7f" id="linkb3ddb3c3-2edb-509e-90fa-65f3536d1c7f" class="exe-tooltip definition-tt titled-tt" title="Librería o Biblioteca | Definición de Librería o Biblioteca"><strong>librerías o bibliotecas,</strong></a> que son un conjunto de funciones que realizan ciertas operaciones habituales sobre los datos. Por ejemplo: si necesitamos saber la raíz cuadrada de un número utilizaremos la librería llamada <strong>math</strong> y, dentro de ella, utilizaremos la función <strong>sqrt(x)</strong>, que devuelve la raíz cuadrada de x.</p>
+<p style="text-align: justify;">Tienes todas las librerías de Python en este enlace: <a href="https://docs.python.org/es/3/library/index.html" target="_blank" title="Accede a las librerías de Python" rel="noopener">librerías de Python</a>. Veamos cómo usarlas:</p>
+<div class="exe-fx exe-tabs">
+<h2>Añadiendo una librería a nuestro programa</h2>
+<p style="text-align: justify;">Para añadir la que necesites a tu programa debes usar el comando <strong>import</strong>. Por ejemplo:</p>
+<p style="text-align: justify;"><strong><span style="font-family: terminal, monaco, monospace;">import math</span></strong></p>
+<p style="text-align: justify;">Después ya puedes usar cualquiera de sus funciones poniendo siempre el nombre de la librería delante seguido de un punto y el nombre de la función que quieres utilizar.</p>
+<h2 style="text-align: justify;">Ejemplo de uso 1</h2>
+<p style="text-align: justify;">Cálculo de la raíz cuadrada de un número:</p>
+<table class="exe-table" style="width: 100%;" border="1">
+<tbody>
+<tr>
+<td style="width: 100%;">
+<p><span style="font-family: terminal, monaco, monospace;">import math</span></p>
+<p><span style="font-family: terminal, monaco, monospace;">x=9</span></p>
+<p><span style="font-family: terminal, monaco, monospace;">print(math.sqrt(x))</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<h2>Ejemplo de uso 2</h2>
+<p style="text-align: justify;">Mostrar la fecha actual. Para ello usamos la librería <a href="https://docs.python.org/es/3/library/datetime.html" target="_blank" title="Accede a la librería datetime" rel="noopener"><strong>datetime</strong></a>. Esta librería contiene ciertas definiciones, llamadas clases, que hay que importar por separado según la que queramos usar. La función que nos da la fecha actual nos la da la función <strong>today()</strong> que está en la clase <strong>date</strong>. Por eso se importa así:</p>
+<table class="exe-table" style="width: 100%;" border="1">
+<tbody>
+<tr>
+<td style="width: 100%;">
+<p><span style="font-family: terminal, monaco, monospace;">from datetime import date</span></p>
+<p><span style="font-family: terminal, monaco, monospace;">print(date.today())</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+¡Pruébalo en tu IDLE a ver qué obtienes! La programación en Python se trata de hacer pruebas, buscar y "cacharrear".</div>
+<div id="tb3ddb3c3-2edb-509e-90fa-65f3536d1c7f" class="exe-tooltip-text">
+<p>Es un conjunto de implementaciones funcionales, codificadas en un lenguaje de programación, que ofrece una interfaz bien definida para la funcionalidad que se invoca.</p>
+</div></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_exp_actividad" id="id150">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">3. Probamos librerías: ¡Tira el dado!</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta150_150_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-expression"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Vamos a utilizar las librerías que acabamos de conocer y realizaremos un programa de azar: simular las tiradas de un dado.</p>
+<p>Los ejercicios te van&nbsp; a proponer mejoras escalonadas. Hazlos a tu ritmo, paso a paso y ¡seguro que te superas cuando consigas realizar el último paso!</p></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_exp_competenciadigital" id="id151">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">3.1. Dado con texto en el IDLE</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta151_151_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-expression"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p style="text-align: justify;">Tirar un dado supone el uso de la aleatoriedad. Pero ¿cómo se lleva esta aleatoriedad al cálculo? Python dispone para ello de una librería llamada <strong>random</strong>.</p>
+<ol>
+<li style="text-align: justify;">Consulta dicha librería en el enlace proporcionado arriba y busca qué función definida en ella nos permite elegir un valor al azar de entre los de una secuencia.</li>
+<li style="text-align: justify;">¿Cómo se crea la variable que almacena el conjunto de valores del dado? ¿Necesitas una variable o varias?</li>
+<li>Crea el código Python que saca un valor al azar entre 1 y 6 (dado).</li>
+</ol></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header exe-udlContent-character-4"><h2>¿Te ayudamos con la librería y la variable?</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><ol>
+<li style="text-align: justify;">Busca en la página de la librería qué realiza la función <strong>choice()</strong>.</li>
+<li style="text-align: justify;">Para definir tu variable <strong>dado</strong>:</li>
+</ol>
+<p style="text-align: justify;">Python tiene varios tipos de datos para crear secuenciasde valores. Dentro de las secuencias están los tipos de cadenas de caracteres, que ya conoces. Otros tipos muy importante de secuencias son las listas y las tuplas:</p>
+<table class="exe-table" style="width: 100%;" border="1">
+<tbody>
+<tr>
+<td style="width: 0.834725%;"><strong>Listas</strong></td>
+<td style="width: 49.7496%; text-align: justify;">Se inicializa escribiendo los valores entre corchetes, separando sus elementos con comas cada uno. Los elementos se acceden por el lugar que ocupan empezando a numerar por el 0.</td>
+<td style="width: 24.1651%;">Son heterogéneas y mutables (elementos diferentes y que pueden cambiar).</td>
+<td style="width: 25.2506%;">
+<p>Ejemplo:</p>
+<p><span style="font-family: terminal, monaco, monospace; font-size: 8pt;">factura=['leche','azúcar',1.2,1.5]</span></p>
+</td>
+</tr>
+<tr>
+<td style="width: 0.834725%;"><strong>Tuplas</strong></td>
+<td style="width: 49.7496%;">Se inicializa escribiendo los valores entre paréntesis, separando sus elementos con comas cada uno. Los elementos se acceden por el lugar que ocupan empezando a numerar por el 0.</td>
+<td style="width: 24.1651%;">Es una lista inmutable. No se pueden modificar sus elementos tras crearla.</td>
+<td style="width: 25.2506%;">
+<p>Ejemplo:</p>
+<p><span style="font-family: terminal, monaco, monospace; font-size: 10pt;">edades=('Mario',3,'Pepa',5)</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Puedes encontrar más información aquí: <a href="https://docs.python.org/es/3/library/stdtypes.html#sequence-types-list-tuple-range" target="_blank" title="Accede a tipos secuencia" rel="noopener">tipos secuencia</a>.</p></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_exp_competenciadigital" id="id152">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">3.2. Nuestro dado tiene su ventana</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta152_152_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-expression"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p style="text-align: justify;">Vamos a mejorar nuestra aplicación del dado: le daremos su propia ventana a la aplicación. En dicha ventana vamos a mostrar el número que sale tras ejecutar el programa y hacer la tirada. Vamos a ir realizando cada paso:<img src="dado_con_texto.png" alt="dado en ventana" title="dado en ventana" style="float: left; margin-right: 20px; margin-left: 20px;" width="250" height="315"></p>
+<ol>
+<li style="text-align: justify;">La librería para crear y usar ventanas en nuestros programas es <strong>tkinter</strong>. Puedes consultar sus funciones en el enlace anterior, que te lleva a ella concretamente: <a href="https://docs.python.org/es/3/library/tkinter.html" target="_blank" title="Accede a tkinter" rel="noopener">tkinter</a>. Impórtala en tu programa.</li>
+<li style="text-align: justify;">Crear una ventana: debes crear la variable que contendrá el área de la ventana. Para ello utiliza la función de la librería que crea este tipo de variable: <span style="font-family: terminal, monaco, monospace;"><strong>tkinter.Tk()</strong></span> y asígnala a la variable que le dará nombre a nuestra ventana.</li>
+<li style="text-align: justify;">Con las funciones <strong>geometry</strong> y <strong>title</strong> dale unas dimensiones y un título a la ventana. (A title solo hay que pasarle una cadena de caracteres, entre comillas, claro).</li>
+<li style="text-align: justify;">Inicializa el dado y ejecuta la instrucción necesaria para elegir un valor al azar, como en el programa anterior.</li>
+<li style="text-align: justify;">Ahora vamos a escribir el resultado en la ventana: crearemos un elemento de tipo "etiqueta" que mostrará el resultado. Para crear esta etiqueta dentro de nuestra ventana ya creada, consulta la librería tkinter y busca la información deseada: <a href="https://tkdocs.com/tutorial/index.html" target="_blank" title="Accede a librería tkinter" rel="noopener">librería tkinter</a>.</li>
+<li>Para mostrar cualquier elemento creado en una ventana, hay que llamar a la función <strong>pack()</strong>. Por ejemplo, si la variable que contiene nuestra etiqueta se llama <strong>resultado</strong>, la instrucción debe ser: <span style="font-family: terminal, monaco, monospace;">resultado.pack()</span></li>
+<li>Finalmente, hay que ejecutar la instrucción <strong>.mainloop()</strong> (precedida de la variable que le da nombre a nuestra ventana) al final del programa para mostrar la ventana inicial. Por ejemplo, si nuestra ventana se creó con <span style="font-family: terminal, monaco, monospace;">ventana=tkinter.Tk()</span>, ahora deberemos llamar a <span style="font-family: terminal, monaco, monospace;">ventana.mainloop()</span></li>
+<li>¡Ejecuta tu programa! y depura los posibles errores que te puedan resultar en el código.</li>
+</ol></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header exe-udlContent-character-1"><h2>¿Cómo vas?</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>¿Te has <strong>equivocado</strong> en algo al hacer la actividad?</p>
+<p>Cuando queremos <strong>aprender</strong> algo, lo normal es equivocarse al principio. Fallar forma parte de aprender. No te agobies por todos los nuevos conceptos, librerías, nombres de las funciones que ofrece cada librería...son muchos comandos los posibles y la práctica da el conocimiento para su uso.</p>
+<p>Además de los enlaces oficiales de Python para trabajar con las librerías y sus funciones, en Internet hay miles de páginas que <strong>resuelven dudas</strong> sobre las distintas posibilidades. Es cuestión de ir probando y familiarizándose con el nuevo lenguaje. Hay que interpretar los errores como <strong>parte del proceso</strong> de aprendizaje de la programación.</p>
+<p>Para aprender de tus errores sigue estos <strong>consejos</strong>:</p>
+<ol>
+<li>Me doy cuenta de en qué parte he fallado.</li>
+<li>Busco la forma de mejorar ese error.</li>
+<li>Lo intento de nuevo.</li>
+<li>Entiendo que el error es importante para aprender.</li>
+</ol>
+<p>No lo olvides: cuando te equivocas una vez, <strong>aprendes</strong> para el siguiente intento.</p>
+<p>¡Y por supuesto siempre estarán tus profesores para ayudarte! Utiliza tu comunicación con ellos para aprender.</p></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_exp_competenciadigital" id="id153">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">3.3. ¡Ahora tenemos un dado real!</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta153_153_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-expression"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p style="text-align: justify;"><img src="Dado.gif" alt="Dado moviéndose" title="Dado moviéndose" style="float: left; margin-right: 20px; margin-left: 20px;" width="201" height="150">Vamos a dar el último paso de nuestro dado: le vamos a añadir las imágenes para obtener un resultado visual.</p>
+<p style="text-align: justify;">Las imágenes que vamos a utilizar en el programa las debes descargar de este enlace: <a href="ImagenesDado.zip" target="_blank" title="Accede a las imágenes del dado" rel="noopener">imágenes del dado</a>.</p>
+<p style="text-align: justify;">No te preocupes si no consigues realizar todos los apartados de este último paso, ¡incidiremos sobre todo lo utilizado aqúí en nuestro próximos programas y proyectos!</p>
+<p style="text-align: justify;">¡Vamos al programa!:</p>
+<ol>
+<li style="text-align: justify;">Además de las librerías ya usadas: random y tkinter, en este nuevo reto vamos a necesitar la librería <strong>PIL</strong>, que habrá que instalar. Esta librería se usa para utilizar y manipular archivos de imagen en Python. En este enlace tienes su documentación oficial, que necesitarás consultar: <a href="https://pillow.readthedocs.io/en/stable/" target="_blank" title="Accede a la librería de trabajo con imágenes PIL o Pillow" rel="noopener">librería de trabajo con imágenes PIL o Pillow</a>. Sigue estos pasos para instalarla, según tu SO:
+<div class="exe-fx exe-paginated">
+<h2>Linux</h2>
+<p>Mira este vídeo que te explica cómo instalar la librería PIL en Linux:</p>
+<p style="text-align: center;"><iframe width="450" height="252" src="https://www.youtube.com/embed/MNLvMzvMMAc" allowfullscreen="allowfullscreen"></iframe><br><br></p>
+<h2>Windows</h2>
+<p>Y aquí tienes la explicación de cómo instalar PIL si tu SO es Windows:</p>
+<p><br>&nbsp;</p>
+<p style="text-align: center;"><iframe width="450" height="314" src="https://www.youtube.com/embed/D0qWbbWLeAA" allowfullscreen="allowfullscreen"></iframe></p>
+</div>
+</li>
+<li>
+<p style="text-align: justify;">Importa los dos módulos que utilizaremos de PIL: Image e ImageTk (utiliza el mismo método de declaración que vimos anteriormente en el ejemplo de uso 2 del apartado sobre las librerías.</p>
+</li>
+<li style="text-align: justify;">
+<p>Crea la ventana para mostrar la tirada, como hiciste en El ejercicio anterior.</p>
+</li>
+<li style="text-align: justify;">
+<p>Crea la variable que será el dado. Realizarás la misma operación en en los pasos anteriores, pero en vez de iniciarla con números, debe ser una secuencia de imágenes que crearás pasándole los nombres de los archivos - con su extensión - como cadena de caracteres. De nuevo puedes elegir crearla como lista o como tupla.</p>
+</li>
+<li style="text-align: justify;">
+<p>Ahora vas a crear la variable que contendrá a la imagen resultante de la tirada. La crearás como una imagen de fotografía usando la función <strong>ImageTk.PhotoImage()</strong>, perteneciente a ImageTk. Puedes ver en la documentación que esta función debe recibir entre los paréntesis una imagen. Para eso usarás el módulo Image. ¿Qué función, desde de <strong>Image</strong>, se usa para abrir una imagen?¿Qué debe recibir esa función entre los paréntesis? Piensa cómo seleccionarás al azar lo que se envía a esta función.</p>
+</li>
+<li style="text-align: justify;">
+<p>Para mostrar en nuestra ventana el resultado, debemos crear de nuevo una etiqueta con <strong>Label</strong>, igual que hicimos en el ejercicio anterior. La diferencia es que esa etiqueta ahora no recibe un segundo parámetro de tipo text, sino uno de tipo image: nuestra variable anterior con la imagen resultante de la selección al azar.</p>
+</li>
+<li style="text-align: justify;">
+<p>Ya sólo tienes que mostrar en la ventana la etiqueta, igual que hiciste en el ejercicio 2.2.</p>
+</li>
+<li style="text-align: justify;">No te olvides de ejecutar la instrucción para mostrar la ventana, que se utiliza siempre al final del programa. (Ver ejercicio anterior).</li>
+</ol></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header"><h2>¿Una ayuda con la variable para la imagen resultado?</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Observa y analiza la siguiente instrucción del código. Asegúrate de que comprendes cada parámetro en ella:</p>
+<p><span style="font-family: terminal, monaco, monospace;">ImagenDado = ImageTk.PhotoImage(Image.open(random.choice(dado))</span></p></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_exp_tarea" id="id154">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">3.4. Cuestión de formato</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta154_154_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-expression"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p style="text-align: justify;">En el paso anterior hemos creado ya nuestro dado digital con visualización incluida. Haz ahora una prueba: en la instrucción en la que muestras la etiqueta en la ventana de la aplicación, añade como parámetro entre los paréntesis <strong>expand=True</strong>, de manera que quedará:</p>
+<p style="text-align: justify;"><span style="font-family: terminal, monaco, monospace;">nombre_variable_etiqueta.pack(expand=True)</span></p>
+<p style="text-align: justify;">Prueba a ejecutar y responde: ¿Qué cambio has observado?¿Para qué crees que sirve este parámetro?</p></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_rep_reflexion" id="id155">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">4. Tratamiento de errores en Python</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta155_155_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-representation"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p style="text-align: justify;">Vamos a ver ahora tres de los errores más comunes en Python, en cada uno de los ejercicios a continuación. Los nombres de estos errores son <strong>ZeroDivisionError</strong>, <strong>NameError</strong>, <strong>TypeError</strong>.</p>
+<p style="text-align: justify;">Prueba lo siguiente: en tu IDLE ejecuta las instrucciones <span style="font-family: terminal, monaco, monospace;">print(3/0), print(s), print (3+"Hola") </span>:</p>
+<ol style="text-align: justify;">
+<li>¿Qué errores te salen?</li>
+<li>¿Sabes a qué se debe cada uno? Identifícalos con los tipos que te hemos nombrado antes.</li>
+</ol>
+<p style="text-align: justify;">Fíjate en que Python te indica el tipo de error. En una buena programación, la posibilidad de error del programador o del usuario (introduciendo valores que no se corresponden con lo esperado) debe tenerse en cuenta. Para ello utilizamos el bloque <strong>try/except</strong> y se usa así:</p>
+<table class="exe-table" style="width: 100%;" border="1">
+<tbody>
+<tr>
+<td style="width: 100%;">
+<p><span style="font-family: terminal, monaco, monospace;">print ("Introduce los valores a dividir.")</span></p>
+<p><span style="font-family: terminal, monaco, monospace;">a= input("Ingresa el primer numero: \n")<br></span></p>
+<p><span style="font-family: terminal, monaco, monospace;">b= input("Ingresa el segundo numero: \n")</span></p>
+<p><span style="font-family: terminal, monaco, monospace;">try:</span></p>
+<p><span style="font-family: terminal, monaco, monospace;">&nbsp;&nbsp; print ("El resultado es: ",a/b) #Debe haber una indentación en el uso de try y de except<br></span></p>
+<p><span style="font-family: terminal, monaco, monospace;">except:</span></p>
+<p><span style="font-family: terminal, monaco, monospace;">&nbsp;&nbsp; print("Error al introducir los datos")# Indentamos también<br></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;">Ejecútalo e intenta ahora:</p>
+<ol style="text-align: justify;">
+<li>Entrar como segunda variable un 0.</li>
+<li>Entrar como segunda variable la cadena "Hola".</li>
+</ol>
+<p style="text-align: justify;">Verás que aparece el mensaje que has configurado para que aparezca. Aunque esto no nos ayuda mucho a la hora de identificar cuál ha sido exactamente el error si no sabemos qué datos introdujo el usuario...</p>
+<p style="text-align: justify;">Vamos a perfeccionar este código con los ejemplos a continuación.</p></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header exe-udlContent-character-2"><h2>¿Sabías que...?</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p style="text-align: justify;">Para introducir en el código un comentario de programador, que explique por ejemplo qué es lo que se va a calcular a contuación, podemos preceder la línea del símbolo <strong>#</strong></p>
+<p style="text-align: justify;">Esto hará que la ejecución del programa ignore completamente el texto a continuación de ese símbolo. Si queires ignorar un texto de varias líneas, deberás usar una triple comilla doble (<strong>"""</strong>) al comienzo y al final del texto que deseas que sea ignorado en la ejecución.</p>
+<p style="text-align: justify;">Esto se llama <strong>comentarios</strong> en el código. ¡Úsalo en tus programas y te resultará de mucha ayuda para saber por qué pusiste cada grupo de instrucciones!</p></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_exp_competenciadigital" id="id156">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">5. Solucionando la división por cero</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta156_156_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-expression"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><ol>
+<li style="text-align: justify;">Ejecuta el programa anterior introduciendo un 0 como segunda variable. ¿Qué mensaje te aparece?</li>
+<li style="text-align: justify;">¿Ese mensaje es representativo del error?¿Podemos saber qué dato ha introducido el usuario gracias al mensaje de error?</li>
+<li style="text-align: justify;">¿Qué otros valores podrían introducirse y obtendríamos el mismo mensaje?</li>
+<li style="text-align: justify;">Efectivamente, necesitamos acotar cuál ha sido el error cuando el usuario ha introducido sus valores para <strong>a</strong> y para <strong>b</strong>. Para solucionarlo necesitas saber que un programa puede tener varios except, y podremos crear uno exclusivamente para el error de la división por cero, sin más que saber el nombre del error en Python: ZeroDivisionError. Las líneas a incluir serán:
+<p><span style="font-family: terminal, monaco, monospace;">except ZeroDivisionError:</span><br><span style="font-family: terminal, monaco, monospace;">&nbsp;&nbsp; print ("Error al intentar dividir por cero, intenta otro calculo!")</span></p>
+</li>
+<li style="text-align: justify;">Intenta incluir estas dos líneas permitiendo que a continuación siga existiendo el antiguo except que teníamos antes con el mensaje de error genérico.</li>
+<li style="text-align: justify;">Prueba a ejecutar introduciendo varios valores para las variabls, entre los que se encuentre el 0 en la segunda variable. ¿Podemos ahora distinguir cuándo el usuario ha intentado dividir por 0?</li>
+</ol></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_exp_competenciadigital" id="id157">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">6. Detectando errores del programador</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta157_157_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-expression"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Vamos a tratar ahora la segunda excepción habitual: <strong>NameError</strong>. Ejecuta el siguiente programa:</p>
+<table class="exe-table" style="width: 100%;" border="1">
+<tbody>
+<tr>
+<td style="width: 100%;">
+<p><span style="font-family: terminal, monaco, monospace;">print ("Introduce los valores a dividir.")</span></p>
+<p><span style="font-family: terminal, monaco, monospace;">a= input("Ingresa el primer numero: \n")</span></p>
+<p><span style="font-family: terminal, monaco, monospace;">b= input("Ingresa el segundo numero: \n")</span></p>
+<p><span style="font-family: terminal, monaco, monospace;">try:</span></p>
+<p><span style="font-family: terminal, monaco, monospace;">&nbsp;&nbsp; print ("El resultado es: ",a/c) #Debe haber una indentación en el uso de try y de except</span></p>
+<p><span style="font-family: terminal, monaco, monospace;">except ZeroDivisionError:</span></p>
+<p><span style="font-family: terminal, monaco, monospace;">&nbsp;&nbsp; print ("Error al intentar dividir por cero")</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li>¿Qué error obtienes ahora?</li>
+<li>¿De qué tipo es?¿Por qué aparece?</li>
+<li>¿Cómo se te ocurre que podemos dar información por pantalla para saber qué ha ocurrido, diferenciando el tipo de error concreto?</li>
+</ol></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_exp_competenciadigital" id="id158">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">7. ¡Detectamos que no es un número!</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta158_158_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-expression"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Finalmente, vamos a tratar el tipo de error: <strong>TypeError</strong>. Toma como entrada el programa que creaste en el apartado anterior:</p>
+<table class="exe-table" style="width: 100%;" border="1">
+<tbody>
+<tr>
+<td style="width: 100%;">
+<p><span style="font-family: terminal, monaco, monospace;">print ("Introduce los valores a dividir.")</span></p>
+<p><span style="font-family: terminal, monaco, monospace;">a= input("Ingresa el primer numero: \n")</span></p>
+<p><span style="font-family: terminal, monaco, monospace;">b= input("Ingresa el segundo numero: \n")</span></p>
+<p><span style="font-family: terminal, monaco, monospace;">try:</span></p>
+<p><span style="font-family: terminal, monaco, monospace;">&nbsp; print ("El resultado es: ",a/b) #Debe haber una indentación en el uso de try y de except</span></p>
+<p><span style="font-family: terminal, monaco, monospace;">&nbsp; print ("El resultado es la división de los números: ", a, " y ", c)</span></p>
+<p><span style="font-family: terminal, monaco, monospace;">except ZeroDivisionError:</span></p>
+<p><span style="font-family: terminal, monaco, monospace;">&nbsp;&nbsp; print ("Error al intentar dividir por cero")</span></p>
+<p><span style="font-family: terminal, monaco, monospace;">except NameError:</span></p>
+<p><span style="font-family: terminal, monaco, monospace;">&nbsp;&nbsp; print ("Se intenta usar una variable que no existe")</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li>Ejecútalo introduciendo una palabra en lugar de un número. ¿Qué nuevo error obtienes ahora?</li>
+<li>Crea una excepción para ese tipo de error concreto.</li>
+<li>Escribe al final una excepcón genérica para cualquier otro tipo de error que se pueda producir y que no es ninguno de los tres anteriores.</li>
+</ol></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_eng_orientaciones" id="id159">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">9. Resumiendo lo aplicado</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta159_159_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-engagement"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p style="text-align: justify;">Crea en tu cuaderno de evidencias una entrada en la que expongas el resultado de lo que has aprendido sobre Python en estos últimos trabajos de programación:</p>
+<ul>
+<li style="text-align: justify;">De lo trabajado sobre este lenguaje de programación, ¿qué conocías ya y sabías resolver?</li>
+<li style="text-align: justify;">¿Has programado la nueva funcionalidad del cálculo de medias completa?</li>
+<li style="text-align: justify;">¿Conocías las librerías en programación? Explica si completaste los pasos en la programación del dado y qué concepto de los trabajados en los distintos pasos con las librerías te ha resultado más difícil de comprender o si hay alguno que no hayas comprendido del todo.</li>
+<li style="text-align: justify;">¿Te ha parecido útil el manejo de excepciones en Python? Piensa en qué otras aplicaciones puede tener un buen uso.</li>
+</ul></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="22_acrcate_a_python.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><span class="page-counter">Página <strong>5</strong> de <strong>5</strong></span>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_intef_js.js"></script></body></html>
